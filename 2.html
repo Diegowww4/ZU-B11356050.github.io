@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人簡介小卡</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #e0f2f7, #bbdefb);
+            padding: 2rem;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        
+        .profile-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #64b5f6;
+        }
+        
+        .section-title {
+            color: #2196f3;
+            font-weight: bold;
+            margin-left: 1rem;
+        }
+        
+        .section-heading {
+            font-weight: bold;
+            margin-top: 2rem;
+        }
+        
+        .grid-box {
+            background-color: #e3f2fd;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-icons .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: #64b5f6;
+            margin-right: 10px;
+            border: 2px solid #2196f3;
+        }
+        
+        @media (max-width: 768px) {
+            .d-md-flex {
+                flex-direction: column !important;
+                align-items: center !important;
+                text-align: center;
+            }
+            .section-title {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="d-md-flex align-items-center">
+            <img src=123.png alt="頭像" class="profile-image">
+            <h4 class="section-title">陳志宇</h4>
+        </div>
+
+        <h5 class="section-heading mt-4">個人簡介</h5>
+        <p class="text-secondary">
+            🎓 資管系在學中，外送員在夜奔，偶爾在命理中看見未來。 💻 有寫過 C 語言、DDoS 過老師，也在程式課把「抽象類別」開發成宇宙級角色扮演。 🍱 外送騎士：安全帽戴全罩，右手牽人生。跑單時段以夜間為主，黑店與暗巷皆無懼，唯獨越南霓虹燈讓我魂飛魄散。 🐎 騎車風格靠風水庇佑，預知能力＋防衛駕駛雙核心運行。端午不返家，期末要撐住，我媽的碎唸我用 LINE 靜音接收。 📜 廢文強者，文風橫跨自嘲系戀愛學、命理八卦學、熊貓送餐學與屏科生存法則。 🖐 右手是伴侶，左手是夢想，人生在兩手之間安穩前行。
+            📷 社群 QR Code 名片已備，專業職業精神寫在熊貓外送箱上，貼紙也是自己設計的。
+        </p>
+        <hr>
+
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h6 class="text-danger">介紹(1)</h6>
+                <div class="grid-box">
+                    <iframe width=100% height=150 src=https://youtube.com/embed/CpD-GR3RcwE frameborder=0 allowfullscreen></iframe>
+                    <p class="mt-2 mb-0">我寫的歌</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-danger">介紹(2)</h6>
+                <div class="mb-2"><button class="btn btn-outline-primary btn-sm">興趣一</button></div>
+                <div><button class="btn btn-outline-primary btn-sm">興趣二</button></div>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-danger">聯絡方式</h6>
+                <div class="contact-icons mt-2">
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
